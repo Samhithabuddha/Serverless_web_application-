@@ -54,32 +54,29 @@ This is a simple web application that greets the user by their name and tracks t
 ```javascript
 let response = await fetch("YOUR_LAMBDA_URL_HERE");
 
-## **Run Locally**
+## Run Locally
 
 1. Open `index.html` in a browser to test the greeting form and view counter.
 
-## **How It Works**
+## How It Works
 
-### **1. User Interaction**
+### 1. User Interaction
 - The user enters their name in the form and clicks "Submit".
 - JavaScript intercepts the form submission, prevents page reload, and displays a personalized greeting.
 
-### **2. View Counter**
+### 2. View Counter
 - On page load, `script.js` calls the AWS Lambda endpoint.
 - Lambda fetches the current number of views from DynamoDB, increments it by one, and returns the updated count.
 - The frontend dynamically updates the "Views" counter.
 
-### **3. Serverless Backend**
+### 3. Serverless Backend
 - `lambdaFunction.py` interacts directly with DynamoDB using Boto3.
 - No traditional server is required, making the application fully serverless.
 
-## **Future Improvements**
+## Future Improvements
 - Add **input validation** to prevent empty names.
 - Show **greeting history** for multiple users.
 - Implement **persistent user sessions** for personalized experiences.
 - Enhance styling and responsiveness for mobile devices.
 
-## **Author**
-**Samhitha Buddha**  
-B.Tech Computer Science – 2026  
-[GitHub](https://github.com/your-github-profile)
+
