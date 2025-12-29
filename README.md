@@ -36,7 +36,7 @@ This is a simple web application that greets the user by their name and tracks t
 
 1. Create a DynamoDB table named `serverless-web-application-on-aws`.
 2. Add a primary key `id` (String) and create an initial item:
-```json
+json
 {
   "id": "0",
   "views": 0
@@ -51,7 +51,6 @@ This is a simple web application that greets the user by their name and tracks t
 ## Connect Frontend
 
 1. Update `script.js` with your Lambda URL:
-```javascript
 let response = await fetch("YOUR_LAMBDA_URL_HERE");
 
 ## Run Locally
